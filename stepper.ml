@@ -332,7 +332,8 @@ let go exp =
 		   let res = stepper exp in
 		   fun lst -> res :: lst) [])) ;;
 
-(* factorial *)
+(* example *)
+(* let rec fac n = if n = 0 then 1 else n * fac (n - 1) in fac 3 *)
 let fac3 = 
   LetRec ("fac", 
 	  Value (Lam ("n", 
